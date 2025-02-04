@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alligator Populations Dashboard</title>
+
+    <!-- Load Required JavaScript Libraries -->
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+    <script src="https://d3js.org/topojson.v1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/datamaps@0.5.9/dist/datamaps.usa.min.js"></script>
+
+    <!-- Link to External Stylesheets -->
+    <link rel="stylesheet" href="style.css"> <!-- Group's styles -->
+    <link rel="stylesheet" href="style_mai.css"> <!-- Your custom styles -->
+    <!-- OpenLayers stylesheet -->
+    <link rel="stylesheet" href="ol.css"> <!-- Ensure you add OpenLayers CSS -->
+</head>
+<body>
+    <header>
+        <h1>Alligator Populations Dashboard</h1>
+        <p>Exploring alligator harvests, sightings, and attacks through interactive visualizations.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#harvest-map">Alligator Harvest Map</a></li>
+            <li><a href="#sightings-heatmap">Alligator Sightings Heatmap</a></li>
+            <li><a href="#sightings-chart">Alligator Sightings Chart</a></li>
+            <li><a href="#attacks-chart">Alligator Attacks Line Chart</a></li>
+            <li><a href="#victim-data">Victim Demographics</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Alligator Harvest Map -->
+        <section id="harvest-map">
+            <h2>Alligator Harvests in Florida (2023)</h2>
+            <p>Interactive map showing the number of alligators harvested in each Florida county.</p>
+            <div id="map-container" style="width: 90%; max-width: 1000px; height: 600px; margin: auto;"></div>
+        </section>
+
+        <!-- Alligator Sightings (Heatmap) -->
+        <section id="sightings-heatmap">
+            <h2>Alligator Sightings Heatmap</h2>
+            <p>Heatmap showing where alligator sightings are most common in the United States.</p>
+            <div id="heatmap-container"></div>
+        </section>
+
+        <!-- Alligator Sightings (Chart) -->
+        <section id="sightings-chart">
+            <h2>Alligator Sightings Over Time</h2>
+            <p>Chart showing the trend of alligator sightings by month and year.</p>
+            <div id="sightings-chart-container"></div>
+        </section>
+
+        <!-- Alligator Attacks (Line Chart) -->
+        <section id="attacks-chart">
+            <h2>Alligator Attacks in the Last 10 Years</h2>
+            <p>Line chart showing the number of alligator-related human incidents over the past decade.</p>
+            <div id="attacks-chart-container"></div>
+        </section>
+
+        <!-- Victim Demographics -->
+        <section id="victim-data">
+            <h2>Alligator Attack Victim Data</h2>
+            <p>Visualizing the age and gender of alligator attack victims.</p>
+            <div id="victim-data-container"></div>
+        </section>
+
+        <!-- New Section: Alligator Sightings Map -->
+        <div class="section">
+            <h2>Alligator Sightings</h2>
+            <div id="map">
+                <!-- Map and overlays will be displayed here -->
+                <div class="slider-container">
+                    <label for="year-range-dropdown">Select Year Range(s):</label>
+                    <div id="year-range-dropdown" class="checkbox-container"></div>
+                    
+                    <label for="month-dropdown">Select Month(s):</label>
+                    <div id="month-dropdown" class="checkbox-container"></div>
+                </div>
+                <div id="legend">
+                    <h4>Sightings Frequency</h4>
+                    <div class="color-bar"></div>
+                    <div class="legend-labels">
+                        <span>Low</span><span>High</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Insights and Key Questions -->
+        <div class="section">
+            <h2>Insights and Key Questions</h2>
+            <ul>
+                <li>How have alligator populations changed over the years?</li>
+                <li>Has alligator sightings increased or decreased over time?</li>
+                <li>Where in the US do most human-related alligator incidents occur?</li>
+                <li>Does weather affect alligator behavior?</li>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <p>Created by James Elander, Mai Houa Hang, Susan Thao Vang, Mee Thao, Nick O’Donnell - 2024</p>
+    </footer>
+
+    <!-- Load Harvest Data -->
+    <script src="script_james.js"></script>
+    
+    <!-- OpenLayers and Libraries -->
+    <script src="ol.js"></script> <!-- Ensure OpenLayers JS is loaded here -->
+    
+    <!-- External Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/papaparse@5.3.0/papaparse.min.js"></script>
+    
+    <!-- Your custom JS -->
+    <script src="script_mai.js"></script> <!-- Your custom script -->
+</body>
+</html>

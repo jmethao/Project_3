@@ -1,5 +1,5 @@
-// Initialize map and variables
-let map, sightings = [];
+// Initialize variables
+let sightings = [];
 
 function initMap() {
     const vs = new ol.source.Vector();  
@@ -11,6 +11,7 @@ function initMap() {
         weight: feature => feature.get('weight') || 0.5
     });
 
+    // Assign map to the already declared 'map' variable
     map = new ol.Map({
         layers: [
             new ol.layer.Tile({ source: new ol.source.OSM() }), 

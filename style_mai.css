@@ -1,0 +1,97 @@
+/* Mai's Custom Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+header {
+    background: #007BFF;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 2rem 0;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+.section {
+    background: #fff;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+.chart-placeholder {
+    background: #e0e0e0;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+#map {
+    width: 100%;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+}
+
+.slider-container {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    z-index: 10;
+    width: 200px;
+    height: 280px;
+    overflow-y: auto;
+}
+
+.checkbox-container {
+    max-height: 100%;
+    overflow-y: auto;
+    width: 100%;
+}
+
+#legend {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    width: 200px;
+    z-index: 10;
+}
+
+#legend .color-bar {
+    height: 15px;
+    background: linear-gradient(to right, #0000FF, #00FFFF, #FFFF00, #FF0000);
+}
+
+#legend .legend-labels {
+    display: flex;
+    justify-content: space-between;
+}
