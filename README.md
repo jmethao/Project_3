@@ -9,7 +9,7 @@ Has alligator sightings decreased or increased over time?
 Is there an increase of alligator attacks over time? Where in the United States are the alligator attacks or human-related incidents occurring most frequently?
 Average age and gender of alligator attack victims?
 
-**1) Are there any population distribution trends that we are seeing with alligators in Florida?**
+## **1) Are there any population distribution trends that we are seeing with alligators in Florida?**
 
 
 
