@@ -1,4 +1,4 @@
-**Alligator Population**
+# **Alligator Population**
 
 The aim of our project is to explore alligator populations, sightings, and human-related incidents like attacks. Using interactive visualizations, we aim to highlight trends in alligator behavior and interactions with humans, helping raise awareness about alligators in the United States.
 
