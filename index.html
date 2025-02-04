@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alligator Populations Dashboard</title>
+
+    <!-- Load Required JavaScript Libraries -->
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+    <script src="https://d3js.org/topojson.v1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/datamaps@0.5.9/dist/datamaps.usa.min.js"></script>
+
+    <!-- Link to External Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Alligator Populations Dashboard</h1>
+        <p>Exploring alligator harvests, sightings, and attacks through interactive visualizations.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#harvest-bar-chart">Alligator Harvest Bar Chart</a></li>
+            <li><a href="#sightings-heatmap">Alligator Sightings Heatmap</a></li>
+            <li><a href="#sightings-chart">Alligator Sightings Chart</a></li>
+            <li><a href="#attacks-chart">Alligator Attacks Line Chart</a></li>
+            <li><a href="#victim-data">Victim Demographics</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- James' Alligator Harvest Bar Chart -->
+        <section id="harvest-bar-chart">
+            <h2>Alligator Harvests by County (2023)</h2>
+            <p>Bar chart displaying the number of alligators harvested per county.</p>
+            <div id="bar-chart-container" style="width: 900px; height: 500px; margin: auto;"></div>
+        </section>
+
+        <!-- Mai's Alligator Sightings (Heatmap) -->
+        <section id="sightings-heatmap">
+            <h2>Alligator Sightings Heatmap</h2>
+            <p>Heatmap showing where alligator sightings are most common in the United States.</p>
+            <div id="heatmap-container"></div>
+        </section>
+
+        <!-- Mai's Alligator Sightings (Chart) -->
+        <section id="sightings-chart">
+            <h2>Alligator Sightings Over Time</h2>
+            <p>Chart showing the trend of alligator sightings by month and year.</p>
+            <div id="sightings-chart-container"></div>
+        </section>
+
+        <!-- Mee's Alligator Attacks (Line Chart) -->
+        <section id="attacks-chart">
+            <h2>Alligator Attacks in the Last 10 Years</h2>
+            <p>Line chart showing the number of alligator-related human incidents over the past decade.</p>
+            <div id="attacks-chart-container"></div>
+        </section>
+
+        <!-- Susan's Victim Demographics -->
+        <section id="victim-data">
+            <h2>Alligator Attack Victim Data</h2>
+            <p>Visualizing the age and gender of alligator attack victims.</p>
+            <div id="victim-data-container"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Created by James Elander, Mai Houa Hang, Susan Thao Vang, Mee Thao - 2024</p>
+    </footer>
+
+    <!-- Load Each Teammate's JavaScript File -->
+    <script src="script_james.js"></script>
+    <script src="script_mai.js"></script>
+    <script src="script_mee.js"></script>
+    <script src="script_susan.js"></script>
+
+</body>
+</html>
