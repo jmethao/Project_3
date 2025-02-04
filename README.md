@@ -1,4 +1,9 @@
-**Alligator Population**
+
+Certainly! Below is your complete README.md code with the bold words made larger using HTML tags. I have applied the <span> tag with inline CSS to make the bold words bigger. You can copy and paste this directly into your README.md file:
+
+markdown
+Copy
+<span style="font-size: 30px; font-weight: bold;">**Alligator Population**</span>
 
 The aim of our project is to explore alligator populations, sightings, and human-related incidents like attacks. Using interactive visualizations, we aim to highlight trends in alligator behavior and interactions with humans, helping raise awareness about alligators in the United States.
 
@@ -9,47 +14,40 @@ Has alligator sightings decreased or increased over time?
 Is there an increase of alligator attacks over time? Where in the United States are the alligator attacks or human-related incidents occurring most frequently?
 Average age and gender of alligator attack victims?
 
-**1) Are there any population distribution trends that we are seeing with alligators in Florida?**
+<span style="font-size: 30px; font-weight: bold;">**1) Are there any population distribution trends that we are seeing with alligators in Florida?**</span>
 
-
-
-
-**2) Has alligator sightings decreased or increased over time?**
+<span style="font-size: 30px; font-weight: bold;">**2) Has alligator sightings decreased or increased over time?**</span>
 
 First off, in our to view the heatmap, you will have to download the github respository if you have not already. Then you will have to use a local web server to serve the HTML file (e.g., using a tool like python -m http.server if you have Python installed, or Live Server in VS Code)
-   
+
 Why It's Important to Know if Alligator Sightings Have Increased or Decreased?
 There are many reason why tracking alligator sightings is important. A few of them are the following below:
 It helps us understand their population
--	More sightings could mean the alligator population is growing meanwhile fewer sightings could mean their population is decreasing.
+- More sightings could mean the alligator population is growing meanwhile fewer sightings could mean their population is decreasing.
 Knowing what location alligators are been seen mostly
--	If alligator sightings increase in areas where people live, it could mean that alligators are getting closer to humans. This could raise safety concerns both for humans and the alligators.
+- If alligator sightings increase in areas where people live, it could mean that alligators are getting closer to humans. This could raise safety concerns both for humans and the alligators.
 The ecosystem health
--	How could this be a concern for the alligators? This could mean that there is some issues with their environment. For example, they might be moving to new areas if their habitat changes.
+- How could this be a concern for the alligators? This could mean that there is some issues with their environment. For example, they might be moving to new areas if their habitat changes.
 
 Findings We Gathered From Our Data:
-•	Alligator sightings have grown significantly over time. Per the heatmap it has been growing steady from 2013-2017 and onwards.
-o	Possible Explanations:
-o	There are more observers over the years and more people are using websites iNaturalist to document their sighting.
-o	Another reason could be habitat Changes. For example, urban expansion might be affecting the alligators’ habitats.
-o	Or else this is because there is an increase in the alligator population over the years.
-•	There is a lot of alligator sightings in March and April. We do see that in spring, around March to May the sightings for alligators increase and then in June to August, the sighting decrease. Then in October to December, the sightings increase again.
-o	What does this tell us? If you want to see alligators, Spring season is the best time to see them.
-•	The top states with the most alligator sighting are Florida, Texas, South Carolina, Louisiana, and Georgia. This is mostly the southeast states which are known to have alligators living there. It’s not surprising because we know alligators live in warm, wet environments such as swamps, rivers, and lakes.
+• Alligator sightings have grown significantly over time. Per the heatmap it has been growing steady from 2013-2017 and onwards.
+  o Possible Explanations:
+  o There are more observers over the years and more people are using websites iNaturalist to document their sighting.
+  o Another reason could be habitat Changes. For example, urban expansion might be affecting the alligators’ habitats.
+  o Or else this is because there is an increase in the alligator population over the years.
+• There is a lot of alligator sightings in March and April. We do see that in spring, around March to May the sightings for alligators increase and then in June to August, the sighting decrease. Then in October to December, the sightings increase again.
+  o What does this tell us? If you want to see alligators, Spring season is the best time to see them.
+• The top states with the most alligator sighting are Florida, Texas, South Carolina, Louisiana, and Georgia. This is mostly the southeast states which are known to have alligators living there. It’s not surprising because we know alligators live in warm, wet environments such as swamps, rivers, and lakes.
 
-**3) Is there an increase of alligator attacks over time? Where in the United States are the alligator attacks or human-related incidents occurring most frequently?**
+<span style="font-size: 30px; font-weight: bold;">**3) Is there an increase of alligator attacks over time? Where in the United States are the alligator attacks or human-related incidents occurring most frequently?**</span>
 
+<span style="font-size: 30px; font-weight: bold;">**5) Average age and gender of alligator attack victims?**</span>
 
+<span style="font-size: 30px; font-weight: bold;">**Resources We Used**</span>
 
+<span style="font-size: 30px; font-weight: bold;">**James Elander's Resources:**</span>
 
-   
-**5) Average age and gender of alligator attack victims?**
-
-**Resources We Used**
-
-**James Elander's Resources:**
-
-**Mai Houa Hang's Resources:**
+<span style="font-size: 30px; font-weight: bold;">**Mai Houa Hang's Resources:**</span>
 
 iNaturalist. iNaturalist. Accessed January 2025. I, Mai Houa Hang, used this website to obtain alligator observation data for the heatmap project. I downloaded a csv file from the website with 66,617 data. Retrieved from https://www.inaturalist.org/observations?subview=table&taxon_id=26159
 
