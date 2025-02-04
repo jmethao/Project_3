@@ -55,7 +55,7 @@ iNaturalist. iNaturalist. Accessed January 2025. I, Mai Houa Hang, used this web
 
 OpenLayers. OpenLayers. Accessed January 2025. I, Mai Houa Hang, used this website for help with learning how to use OpenLayers with JavaScript and locating what files I would need to download locally to use this library. Retrieved from https://openlayers.org/
 
-OpenLayers. OpenLayers GitHub Release v6.15.1. Accessed January 2025. I, Mai Houa Hang, used this GitHub page to download files for the project. Retrieved from https://github.com/openlayers/openlayers/releases/tag/v6.15.1
+OpenLayers. OpenLayers GitHub Release v6.15.1. Accessed January 2025. I, Mai Houa Hang, used this GitHub page to download the Openlayers zip folder in order to use the library for this project. Retrieved from https://github.com/openlayers/openlayers/releases/tag/v6.15.1
 
 OpenLayers. Heatmap of Earthquakes Example. Accessed January 2025. I, Mai Houa Hang, used this website for guidance in general on how to code my OpenLayers heatmap on my script_mai.js file. Retrieved from https://openlayers.org/en/latest/examples/heatmap-earthquakes.html
 
