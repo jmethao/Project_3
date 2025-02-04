@@ -14,7 +14,7 @@ Average age and gender of alligator attack victims?
 
 
 
-**2) Has alligator sightings decreased or increased over time?**
+## **2) Has alligator sightings decreased or increased over time?**
 
 First off, in our to view the heatmap, you will have to download the github respository if you have not already. Then you will have to use a local web server to serve the HTML file (e.g., using a tool like python -m http.server if you have Python installed, or Live Server in VS Code)
    
@@ -37,19 +37,19 @@ o	Or else this is because there is an increase in the alligator population over 
 o	What does this tell us? If you want to see alligators, Spring season is the best time to see them.
 •	The top states with the most alligator sighting are Florida, Texas, South Carolina, Louisiana, and Georgia. This is mostly the southeast states which are known to have alligators living there. It’s not surprising because we know alligators live in warm, wet environments such as swamps, rivers, and lakes.
 
-**3) Is there an increase of alligator attacks over time? Where in the United States are the alligator attacks or human-related incidents occurring most frequently?**
+## **3) Is there an increase of alligator attacks over time? Where in the United States are the alligator attacks or human-related incidents occurring most frequently?**
 
 
 
 
    
-**5) Average age and gender of alligator attack victims?**
+## **5) Average age and gender of alligator attack victims?**
 
-**Resources We Used**
+## **Resources We Used**
 
-**James Elander's Resources:**
+## **James Elander's Resources:**
 
-**Mai Houa Hang's Resources:**
+## **Mai Houa Hang's Resources:**
 
 iNaturalist. iNaturalist. Accessed January 2025. I, Mai Houa Hang, used this website to obtain alligator observation data for the heatmap project. I downloaded a csv file from the website with 66,617 data. Retrieved from https://www.inaturalist.org/observations?subview=table&taxon_id=26159
 
@@ -110,11 +110,11 @@ Color Combos. (n.d.). Color scheme 12847 [Website]. Accessed February 2025. I, M
 
 OpenAI. (2023). ChatGPT (Mar 14 version) [Large language model]. Accessed Feburary 2025. I, Mai Houa Hang, used this tool for help with step 52 to 54 in my style_mai.css file with what codes to add to make sure I am labeling my legend correctly. Retrieved from https://chat.openai.com/chat
 
-**Nick O’donnell's Resources:**
+## **Nick O’donnell's Resources:**
 
-**Mee Thao's Resources:**
+## **Mee Thao's Resources:**
 
-**Susan Thao Vang's Resources:**
+## **Susan Thao Vang's Resources:**
 
 
 
