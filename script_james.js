@@ -1,72 +1,53 @@
-var map;
-
 document.addEventListener("DOMContentLoaded", function () {
-    map = new Datamap({
-        element: document.getElementById("map-container"),
-        scope: "usa",
-        responsive: true,
-
-        setProjection: function (element) {
-            var projection = d3.geo.albers()
-                .center([5, 27])
-                .rotate([82, 0])
-                .parallels([24, 31])
-                .scale(6500)
-                .translate([(element.offsetWidth / 2) + 300, (element.offsetHeight / 2) + 150]);
-
-            var path = d3.geo.path().projection(projection);
-            return { path: path, projection: projection };
-        },
-
-        geographyConfig: {
-            highlightBorderColor: "#bada55",
-            popupOnHover: true,
-            highlightOnHover: true,
-            popupTemplate: function (geo, data) {
-                if (!data || !data.harvested) {
-                    return `<div class="datamaps-hoverover"><strong>${geo.properties.name}</strong><br>No Data</div>`;
-                }
-                return `<div class="datamaps-hoverover">
-                    <strong>${data.name}</strong><br>
-                    Alligators Harvested: ${data.harvested}
-                </div>`;
-            }
-        },
-
-        fills: {
-            HIGH: "#d62828",
-            MEDIUM: "#e76f51",
-            LOW: "#f4a261",
-            DEFAULT: "#ddd"
-        },
-        data: {}
-    });
-
-    d3.csv("county_gator_counts.csv", function (data) {
-        countyData = {};
-
-        data.forEach(row => {
-            var county = row["County"].trim().toUpperCase().replace(/\./g, "");
-            if (!county.endsWith("COUNTY")) {
-                county += " COUNTY";
-            }
-
-            var harvested = parseInt(row["Number of Gators"]) || 0;
-
-            countyData[county] = {
-                fillKey: harvested > 300 ? "HIGH" : harvested > 100 ? "MEDIUM" : "LOW",
-                harvested: harvested
-            };
-        });
-
-        console.log("Final County Names:", Object.keys(countyData));
-
-        if (map) {
-            setTimeout(() => {
-                map.updateChoropleth(countyData);
-            }, 1000);
-        } else {
-            console.error("Map failed to initialize.");
+    d3.csv("county_gator_counts.csv", function (error, data) {
+        if (error) {
+            console.error("❌ Error loading CSV:", error);
+            return;
         }
+
+        console.log("✅ CSV Loaded Successfully!", data);
+
+        var margin = { top: 50, right: 50, bottom: 220, left: 100 }, // space for labels
+            width = 1600 - margin.left - margin.right, // width for spacing
+            height = 600 - margin.top - margin.bottom; //height for better visibility
+
+        var svg = d3.select("#bar-chart-container")
+            .append("svg")
+            .attr("width", width + margin.left + margin.right)
+            .attr("height", height + margin.top + margin.bottom)
+            .append("g")
+            .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+        var x = d3.scale.ordinal()
+            .domain(data.map(function (d) { return d.County; }))
+            .rangeBands([0, width], 0.9); //spacing between bars
+
+        var y = d3.scale.linear()
+            .domain([0, d3.max(data, function (d) { return +d["Number of Gators"]; })])
+            .range([height, 0]);
+
+        var xAxis = d3.svg.axis().scale(x).orient("bottom");
+        var yAxis = d3.svg.axis().scale(y).orient("left");
+
+        svg.append("g")
+            .attr("transform", "translate(0," + height + ")")
+            .call(xAxis)
+            .selectAll("text")
+            .attr("transform", "rotate(-45)")
+            .style("text-anchor", "end")
+            .style("font-size", "14px"); // Bigger font for readability
+
+        svg.append("g").call(yAxis);
+
+        svg.selectAll(".bar")
+            .data(data)
+            .enter()
+            .append("rect")
+            .attr("class", "bar")
+            .attr("x", function (d) { return x(d.County); })
+            .attr("y", function (d) { return y(+d["Number of Gators"]); })
+            .attr("width", x.rangeBand()) 
+            .attr("height", function (d) { return height - y(+d["Number of Gators"]); })
+            .attr("fill", "#e76f51");
     });
 });
