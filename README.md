@@ -162,8 +162,6 @@ Color Combos. (n.d.). Color scheme 12847 [Website]. Accessed February 2025. I, M
 
 OpenAI. (2023). ChatGPT (Mar 14 version) [Large language model]. Accessed Feburary 2025. I, Mai Houa Hang, used this tool for help with step 52 to 54 in my style_mai.css file with what codes to add to make sure I am labeling my legend correctly. Retrieved from https://chat.openai.com/chat
 
-## **Nick O’donnell's Resources:**
-
 ## **Mee Thao's Resources:**
 Danelo, Adam. Fatal Alligator Attacks in the U.S. Kaggle, 2021, www.kaggle.com/datasets/danela/fatal-alligator-attacks-us.
 
