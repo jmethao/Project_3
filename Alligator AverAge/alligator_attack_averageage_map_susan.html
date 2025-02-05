@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Average Age by Gender - Bar Graph</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <h2>Average Age of Attack Victims by Gender</h2>
+    <canvas id="genderAgeChart" width="600" height="400"></canvas>
+    <script>
+        // Sample data
+        const data = [
+            { "Date": "August 15, 2022", "Name": "Nancy Becker", "Age": 88, "Sex": "female" },
+            { "Date": "July 15, 2022", "Name": "Rose Marie Wiegand", "Age": "80s", "Sex": "female" },
+            { "Date": "June 24, 2022", "Name": "Micheal Burstein", "Age": 75, "Sex": "male" },
+            { "Date": "May 31, 2022", "Name": "Sean McGuinness", "Age": 47, "Sex": "male" },
+            { "Date": "August 30, 2021", "Name": "Timothy Satterlee", "Age": 71, "Sex": "male" },
+            { "Date": "May 1, 2020", "Name": "Cynthia Covert", "Age": 58, "Sex": "female" },
+            { "Date": "August 20, 2018", "Name": "Cassandra Cline", "Age": 45, "Sex": "female" },
+            { "Date": "June 8, 2018", "Name": "Shizuka Matsuki", "Age": 47, "Sex": "female" },
+            { "Date": "July 29, 2016", "Name": "Bonnie Walker", "Age": 90, "Sex": "female" },
+            { "Date": "June 14, 2016", "Name": "Lane Graves", "Age": 2, "Sex": "male" },
+            { "Date": "November 13, 2015", "Name": "Matthew Riggins", "Age": 22, "Sex": "male" },
+            { "Date": "October 19, 2015", "Name": "James Okkerse", "Age": 62, "Sex": "male" },
+            { "Date": "July 4, 2015", "Name": "Tommie Woodward", "Age": 28, "Sex": "male" },
+            { "Date": "November 13, 2007", "Name": "Justo Padron", "Age": 36, "Sex": "male" },
+            { "Date": "October 5, 2007", "Name": "Gwen Williams", "Age": 83, "Sex": "female" },
+            { "Date": "May 14, 2006", "Name": "Annemarie Campbell", "Age": 23, "Sex": "female" },
+            { "Date": "May 14, 2006", "Name": "Judy W. Cooper", "Age": 43, "Sex": "female" },
+            { "Date": "May 10, 2006", "Name": "Yovy Suarez Jiménez", "Age": 28, "Sex": "female" },
+            { "Date": "July 15, 2005", "Name": "Kevin Albert Murray", "Age": 41, "Sex": "male" },
+            { "Date": "March 15, 2005", "Name": "Don Owen", "Age": 56, "Sex": "male" },
+            { "Date": "September 26, 2004", "Name": "Michelle Reeves", "Age": 20, "Sex": "female" },
+            { "Date": "June 21, 2004", "Name": "Janie Melsek", "Age": 54, "Sex": "female" },
+            { "Date": "June 18, 2003", "Name": "Brian Griffin", "Age": 12, "Sex": "male" },
+            { "Date": "September 11, 2001", "Name": "Robert Steele", "Age": 81, "Sex": "male" },
+            { "Date": "June 23, 2001", "Name": "Alexandria Murphy", "Age": 2, "Sex": "female" }
+            // More data here
+        ];
+
+        // Function to clean and calculate average age by gender
+        function calculateAverageAge(data) {
+            const genderAges = {
+                male: [],
+                female: []
+            };
+
+            data.forEach(item => {
+                let age = item.Age;
+
+                // Handle age range like "80s" and remove non-numeric data
+                if (typeof age === 'string') {
+                    if (age === '80s') {
+                        age = 80; // Approximation for "80s"
+                    } else {
+                        return; // Ignore non-numeric values (e.g., "unknown")
+                    }
+                }
+
+                if (item.Sex === "male") {
+                    genderAges.male.push(age);
+                } else if (item.Sex === "female") {
+                    genderAges.female.push(age);
+                }
+            });
+
+            // Calculate the average for each gender
+            const averageAgeMale = genderAges.male.reduce((a, b) => a + b, 0) / genderAges.male.length || 0;
+            const averageAgeFemale = genderAges.female.reduce((a, b) => a + b, 0) / genderAges.female.length || 0;
+
+            return {
+                male: averageAgeMale,
+                female: averageAgeFemale
+            };
+        }
+
+        // Calculate average ages
+        const averages = calculateAverageAge(data);
+
+        // Create the bar chart
+        const ctx = document.getElementById('genderAgeChart').getContext('2d');
+        const genderAgeChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Male', 'Female'],
+                datasets: [{
+                    label: 'Average Age of Victims',
+                    data: [averages.male, averages.female],
+                    backgroundColor: ['rgba(54, 162, 235, 0.2)', 'rgba(255, 99, 132, 0.2)'],
+                    borderColor: ['rgba(54, 162, 235, 1)', 'rgba(255, 99, 132, 1)'],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        title: {
+                            display: true,
+                            text: 'Average Age'
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
+
+
