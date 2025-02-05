@@ -94,6 +94,11 @@ In conclusion, if you're a resident of Florida, it's important to stay aware of 
 ## **Resources We Used**
 
 ## **James Elander's Resources: https://myfwc.com/ https://datamaps.github.io/  Please note that I used the AI learning assistant and went to office hours to get my code debugged.
+Step 1. Download the files in james_code. 
+Step 2. Navigate the to folder on your computer
+Step 3. Locally host a server and click on the index file to open the website
+
+James Analysis: I expected the most amount of alligators to be harvested in counties that encompassed the Everglades. I was surprised to see that the 2 largest alligator harvests happened in counties that were around the Orlando metro area.
 
 
 ## **Mai Houa Hang's Resources:**
