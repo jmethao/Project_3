@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alligator Heatmap</title>
+
+    <!-- OpenLayers CSS -->
+    <link rel="stylesheet" href="ol.css"> <!-- Reference to local ol.css file -->
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="style_mai.css"> <!-- Custom Stylesheet -->
+
+    <!-- PapaParse Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script> 
+</head>
+<body>
+    <!-- Map container -->
+    <div id="map"></div> 
+
+    <!-- Slider for filtering -->
+    <div class="slider-container">
+        <label for="year-range-dropdown">Select Year Range(s):</label>
+        <div id="year-range-dropdown" class="checkbox-container"></div>
+
+        <label for="month-dropdown">Select Month(s):</label>
+        <div id="month-dropdown" class="checkbox-container"></div>
+    </div>
+
+    <!-- Legend container -->
+    <div id="legend">
+        <h3>Sighting Frequencies</h3>
+        <div class="color-bar"></div>
+        <div class="legend-labels">
+            <span>Low</span>
+            <span>High</span>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="ol.js"></script> <!-- Reference to local ol.js file -->
+    <script src="script_mai.js"></script> <!-- Custom JS -->
+</body>
+</html>

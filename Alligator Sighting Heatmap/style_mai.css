@@ -1,0 +1,55 @@
+/* Making the map show full screen */
+html, body {
+    height: 100%;  
+    margin: 0;
+    padding: 0;
+}
+
+/* Set the map container to take the full viewport */
+#map {
+    width: 100vw;      
+    height: 100vh;     
+    z-index: 0;        
+}
+
+/* Common properties for absolute positioning elements */
+.slider-container, #legend {
+    position: absolute;
+    background: white;
+    z-index: 10;
+    width: 200px;
+}
+
+/* Slider container*/
+.slider-container {
+    top: 10px;
+    left: 10px;
+    padding: 10px;
+    height: 280px;
+    overflow-y: auto;
+}
+
+/* Legend*/
+#legend {
+    bottom: 10px;
+    right: 10px;
+}
+
+/* Checkbox container*/
+.checkbox-container {
+    width: 100%;
+    max-height: 100%;
+    overflow-y: auto;
+}
+
+/* Legend color bar */
+#legend .color-bar {
+    height: 15px;
+    background: linear-gradient(to right, #0000FF, #00FFFF, #FFFF00, #FF0000);
+}
+
+/* Labels for the color bar */
+#legend .legend-labels {
+    display: flex;
+    justify-content: space-between;
+}
