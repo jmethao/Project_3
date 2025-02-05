@@ -24,21 +24,35 @@ First off, in our to view the heatmap, you will have to download the github resp
    
 Why It's Important to Know if Alligator Sightings Have Increased or Decreased?
 There are many reason why tracking alligator sightings is important. A few of them are the following below:
+
 It helps us understand their population
+
 -	More sightings could mean the alligator population is growing meanwhile fewer sightings could mean their population is decreasing.
+-	
 Knowing what location alligators are been seen mostly
+
 -	If alligator sightings increase in areas where people live, it could mean that alligators are getting closer to humans. This could raise safety concerns both for humans and the alligators.
+-	
 The ecosystem health
+
 -	How could this be a concern for the alligators? This could mean that there is some issues with their environment. For example, they might be moving to new areas if their habitat changes.
 
 Findings We Gathered From Our Data:
+
 •	Alligator sightings have grown significantly over time. Per the heatmap it has been growing steady from 2013-2017 and onwards.
+
 o	Possible Explanations:
+
 o	There are more observers over the years and more people are using websites iNaturalist to document their sighting.
+
 o	Another reason could be habitat Changes. For example, urban expansion might be affecting the alligators’ habitats.
+
 o	Or else this is because there is an increase in the alligator population over the years.
+
 •	There is a lot of alligator sightings in March and April. We do see that in spring, around March to May the sightings for alligators increase and then in June to August, the sighting decrease. Then in October to December, the sightings increase again.
+
 o	What does this tell us? If you want to see alligators, Spring season is the best time to see them.
+
 •	The top states with the most alligator sighting are Florida, Texas, South Carolina, Louisiana, and Georgia. This is mostly the southeast states which are known to have alligators living there. It’s not surprising because we know alligators live in warm, wet environments such as swamps, rivers, and lakes.
 
 ## **3) Is there an increase of alligator attacks over time? Where in the United States are the alligator attacks or human-related incidents occurring most frequently?**
