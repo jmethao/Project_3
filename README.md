@@ -9,6 +9,10 @@ Has alligator sightings decreased or increased over time?
 Is there an increase of alligator attacks over time? Where in the United States are the alligator attacks or human-related incidents occurring most frequently?
 Average age and gender of alligator attack victims?
 
+## ** How to run our data**
+
+Please note that to run our data, you will have to download our github repository and use a local web server to serve the HTML file (e.g., using a tool like python -m http.server if you have Python installed, or Live Server in VS Code)
+
 ## **1) Are there any population distribution trends that we are seeing with alligators in Florida?**
 
 
@@ -16,7 +20,7 @@ Average age and gender of alligator attack victims?
 
 ## **2) Has alligator sightings decreased or increased over time?**
 
-First off, in our to view the heatmap, you will have to download the github respository if you have not already. Then you will have to use a local web server to serve the HTML file (e.g., using a tool like python -m http.server if you have Python installed, or Live Server in VS Code)
+First off, in our to view the heatmap, you will have to download the github respository if you have not already. Go the the "Alligator Sighting Heatmap" folder and using a local web server such as python -m http.server if you have Python installed, or Live Server in VS Code, you can open the file: index_mai.html
    
 Why It's Important to Know if Alligator Sightings Have Increased or Decreased?
 There are many reason why tracking alligator sightings is important. A few of them are the following below:
