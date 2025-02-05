@@ -93,7 +93,8 @@ In conclusion, if you're a resident of Florida, it's important to stay aware of 
 
 ## **Resources We Used**
 
-## **James Elander's Resources:**
+## **James Elander's Resources: https://myfwc.com/ https://datamaps.github.io/  Please note that I used the AI learning assistant and went to office hours to get my code debugged.
+
 
 ## **Mai Houa Hang's Resources:**
 
