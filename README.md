@@ -28,14 +28,12 @@ There are many reason why tracking alligator sightings is important. A few of th
 It helps us understand their population
 
 -	More sightings could mean the alligator population is growing meanwhile fewer sightings could mean their population is decreasing.
--	
-Knowing what location alligators are been seen mostly
-
+  
+-	Knowing what location alligators are been seen mostly
+  
 -	If alligator sightings increase in areas where people live, it could mean that alligators are getting closer to humans. This could raise safety concerns both for humans and the alligators.
--	
-The ecosystem health
-
--	How could this be a concern for the alligators? This could mean that there is some issues with their environment. For example, they might be moving to new areas if their habitat changes.
+  
+-	The ecosystem health - How could this be a concern for the alligators? This could mean that there is some issues with their environment. For example, they might be moving to new areas if their habitat changes.
 
 Findings We Gathered From Our Data:
 
