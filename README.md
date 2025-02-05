@@ -86,7 +86,8 @@ Directions for the Marker Map:
 1. in VS Code open the Alligator Plot graph and marker map folder 
 2. open the index_mee.html file with Live Server to pull up the Marker Map
 3. click through the markers to see the description details of each alligator attack
-   
+
+In conclusion, if you're a resident of Florida, it's important to stay aware of your surroundings and understand the potential dangers in your area. The government has installed safety and warning signs to inform and caution tourists, with the aim of preventing future alligator-related incidents.
 
 ## **5) Average age and gender of alligator attack victims?**
 
