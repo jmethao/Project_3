@@ -20,7 +20,7 @@ Please note that to run our data, you will have to download our github repositor
 
 ## **2) Has alligator sightings decreased or increased over time?**
 
-First off, in our to view the heatmap, you will have to download the github respository if you have not already. Go the the "Alligator Sighting Heatmap" folder and using a local web server such as python -m http.server if you have Python installed, or Live Server in VS Code, you can open the file: index_mai.html
+First off, to view the heatmap, you will have to download the github respository if you have not already. Go the the "Alligator Sighting Heatmap" folder and using a local web server such as python -m http.server if you have Python installed, or Live Server in VS Code, you can open the file: index_mai.html
    
 Why It's Important to Know if Alligator Sightings Have Increased or Decreased?
 There are many reason why tracking alligator sightings is important. A few of them are the following below:
@@ -89,7 +89,7 @@ Directions for the Marker Map:
 
 In conclusion, if you're a resident of Florida, it's important to stay aware of your surroundings and understand the potential dangers in your area. The government has installed safety and warning signs to inform and caution tourists, with the aim of preventing future alligator-related incidents.
 
-## **5) Average age and gender of alligator attack victims?**
+## **4) Average age and gender of alligator attack victims?**
 
 ## **Resources We Used**
 
