@@ -55,20 +55,38 @@ o	What does this tell us? If you want to see alligators, Spring season is the be
 
 ## **3) Is there an increase of alligator attacks over time? Where in the United States are the alligator attacks or human-related incidents occurring most frequently?**
 1st question: Is there an increase of alligator attacks over time? 
-I thought a scatter plot would do a good job highlighting the visual for this question.  In jupyter notebook I import pandas and matplotlib libraries. This data was also collected by kaggle.com.
+I (Mee) thought a scatter plot would do a good job highlighting the visual for this question.  In jupyter notebook I import pandas and matplotlib libraries. This data was also collected by kaggle.com.
+1. I extracted year from the Date column. 
+2. Created a new column for Year. Group the data by Year and count the number of attacks per year. 
+3. I plotted the data as a scatter plot
+4. Added labels and the title 
+5. Printed the graph
+
+The data provided from kaggle.com shows the earliest alligator attack was from 1904. There was an incident where a male servant of Rene-Robert Cavelier was killed while swimming across the Colorado River in Texas. There were no other attacks recorded until 1973 where a woman named Sharon Holmes was killed while swimming at Oscar Scherer State Park in Florida by an 11 ft, 3 inch alligator. Between 1977 and 2022 there have been 36 other alligator attacks/incidents. 
+
 
 Directions for the Scatter Plot:
-1. download the Alligator_Attacks_Overtime_Mee file onto your desktop
-2. right click on the file and open a gitbash console in order to open jupyter notebook in your bash console
-3. in your jupter notebook run the kernels for the code to generate the scatter plot
+1. do a git clone of the project 3 repository
+2. from the Alligator Plot graph and marker map folder, right click on the file and open a gitbash console in order to open jupyter notebook in your bash console
+3. select the Alligator_Attacks_Overtime_Mee file in your juypter notebook
+4. run the kernels for the code to generate the scatter plot
 
 2nd question: Where in the United States are the alligator attacks or human-related incidents occurring most frequently? 
 For this question I thought a map with markers that included the name, location, and details of the alligator attacks/incidents would be appropriate. I used JavaScript, loaded the D3 and Leaflet  library to create the map and markers. I loaded the fatal alligator attack US CSV file. This data was collected by kaggle.com.
+1. Initialized the map to zoom in to the US only.
+2. Add OpenStreetMap tiles
+3. Created an array to store the data for the markers. 
+4. Used createMarkers function to access the attackData and created a loop to loop over every element in the attackData array. 
+5. This created the Leaflet markers at the latitude and longitude of attack objects in the loop and added to map. 
+6. And then create the markers on the map so that when you click on the markers it populates the information: victim name, location, and description of the attack.
+
+This data was also collected by kaggle.com. Per the data most of the alligator attacks/human related incidents occurred mostly in Florida. That is not a surprise as Florida has a high alligator population and many people visit the state for water activities. Humans are also building in areas near marsh and wild areas which leads to more changes of alligator encounters and potential conflicts. 
 
 Directions for the Marker Map: 
-1. download the html (index_mee) and the javascript (script_Mee) onto your desktop
-2. open the html and javascript in VS Code
-3. in VS Code open the html file with Live Server to pull up the Marker Map
+1. in VS Code open the Alligator Plot graph and marker map folder 
+2. open the index_mee.html file with Live Server to pull up the Marker Map
+3. click through the markers to see the description details of each alligator attack
+   
 
 ## **5) Average age and gender of alligator attack victims?**
 
