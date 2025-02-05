@@ -54,11 +54,22 @@ o	What does this tell us? If you want to see alligators, Spring season is the be
 •	The top states with the most alligator sighting are Florida, Texas, South Carolina, Louisiana, and Georgia. This is mostly the southeast states which are known to have alligators living there. It’s not surprising because we know alligators live in warm, wet environments such as swamps, rivers, and lakes.
 
 ## **3) Is there an increase of alligator attacks over time? Where in the United States are the alligator attacks or human-related incidents occurring most frequently?**
+1st question: Is there an increase of alligator attacks over time? 
+I thought a scatter plot would do a good job highlighting the visual for this question.  In jupyter notebook I import pandas and matplotlib libraries. This data was also collected by kaggle.com.
 
+Directions for the Scatter Plot:
+1. download the Alligator_Attacks_Overtime_Mee file onto your desktop
+2. right click on the file and open a gitbash console in order to open jupyter notebook in your bash console
+3. in your jupter notebook run the kernels for the code to generate the scatter plot
 
+2nd question: Where in the United States are the alligator attacks or human-related incidents occurring most frequently? 
+For this question I thought a map with markers that included the name, location, and details of the alligator attacks/incidents would be appropriate. I used JavaScript, loaded the D3 and Leaflet  library to create the map and markers. I loaded the fatal alligator attack US CSV file. This data was collected by kaggle.com.
 
+Directions for the Marker Map: 
+1. download the html (index_mee) and the javascript (script_Mee) onto your desktop
+2. open the html and javascript in VS Code
+3. in VS Code open the html file with Live Server to pull up the Marker Map
 
-   
 ## **5) Average age and gender of alligator attack victims?**
 
 ## **Resources We Used**
@@ -129,29 +140,13 @@ OpenAI. (2023). ChatGPT (Mar 14 version) [Large language model]. Accessed Febura
 ## **Nick O’donnell's Resources:**
 
 ## **Mee Thao's Resources:**
-My question: Where in the United States are the alligator attacks or human-related incidents occurring most frequently? 
-For this question I thought a map with markers that included the name, location, and details of the alligator attacks/incidents would be appropriate. I used JavaScript, loaded the D3 and Leaflet  library to create the map and markers. I loaded the fatal alligator attack US CSV file. This data was collected by kaggle.com.
-
 Danelo, Adam. Fatal Alligator Attacks in the U.S. Kaggle, 2021, www.kaggle.com/datasets/danela/fatal-alligator-attacks-us.
 
 OpenAI. "ChatGPT." OpenAI, OpenAI, 2023, www.openai.com/chatgpt. Accessed 27 Jan. 2025. Mee used ChatGPT to help code the leaflet and D3 libraries into the index.html. I also needed help to find the longitude and latitude for the Marker map as the fatal alligator attack US CSV file downloaded from the kaggle.com website did not have longitude/ latitude data in the data set. At first ChatGPT instructed I use the Geocoder API in order for the markers to populate on the map but the markers were not showing up on the right location on the map. This took up most of my time on 1/27/25.
 
 OpenAI. "ChatGPT." OpenAI, OpenAI, 2023, www.openai.com/chatgpt. Accessed 28 Jan. 2025. Mee used ChatGPT to continue to find ways to code JavaScript so that the markers are populating in the correct location per the data from the fatal alligator attack US CSV file. ChatGPT then helped me turn the location description from the attacks into longitude and latitude coordinates. Creating an array to store the data and then add to map was successful. From there I was able to add markers and descriptions and add to map. 
 
-My 2nd question: Is there an increase of alligator attacks over time? 
-I thought a scatter plot would do a good job highlighting the visual for this question.  In jupyter notebook I import pandas and matplotlib libraries. This data was also collected by kaggle.com.
-
 OpenAI. "ChatGPT." OpenAI, OpenAI, 2023, www.openai.com/chatgpt. Accessed 30 Jan. 2025. Mee used ChatGPT on this day (to help with the python scatter plot graph) to extract the year from the Date column as the data did not have it's own year column. ChatGPT then helped me create a new column for Year, group the data by year, and count the number of attacks per year. 
-
-Directions for the Marker Map: 
-1. download the html (index_mee) and the javascript (script_Mee)
-2. open the html and javascript in VS Code
-3. open the html with Live Server to pull up the Marker Map
-
-Directions for the Scatter Plot:
-1. download the Alligator_Attacks_Overtime_Mee file
-2. open jupyter notebook in your bash console
-3. run the kernels for the code to generate the scatter plot
 
 ## **Susan Thao Vang's Resources:**
 
