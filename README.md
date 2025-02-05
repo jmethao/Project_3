@@ -15,12 +15,13 @@ Please note that to run our data, you will have to download our github repositor
 
 ## **1) Are there any population distribution trends that we are seeing with alligators in Florida?**
 
+To run the bar graph for this question, go to James_code folder and select the index_james.html.html.Use a local web server such as python -m http.server if you have Python installed, or Live Server in VS Code, you can open the file.
 
-
+James Analysis: I expected the most amount of alligators to be harvested in counties that encompassed the Everglades. I was surprised to see that the 2 largest alligator harvests happened in counties that were around the Orlando metro area.
 
 ## **2) Has alligator sightings decreased or increased over time?**
 
-First off, to view the heatmap, you will have to download the github respository if you have not already. Go the the "Alligator Sighting Heatmap" folder and using a local web server such as python -m http.server if you have Python installed, or Live Server in VS Code, you can open the file: index_mai.html
+First off, to view the heatmap, you will have to go to the the "Alligator Sighting Heatmap" folder and using a local web server such as python -m http.server if you have Python installed, or Live Server in VS Code, you can open the file: index_mai.html
    
 Why It's Important to Know if Alligator Sightings Have Increased or Decreased?
 There are many reason why tracking alligator sightings is important. A few of them are the following below:
@@ -93,13 +94,9 @@ In conclusion, if you're a resident of Florida, it's important to stay aware of 
 
 ## **Resources We Used**
 
-## **James Elander's Resources: https://myfwc.com/ https://datamaps.github.io/  Please note that I used the AI learning assistant and went to office hours to get my code debugged.
-Step 1. Download the files in james_code. 
-Step 2. Navigate the to folder on your computer
-Step 3. Locally host a server and click on the index file to open the website
+## **James Elander's Resources: 
 
-James Analysis: I expected the most amount of alligators to be harvested in counties that encompassed the Everglades. I was surprised to see that the 2 largest alligator harvests happened in counties that were around the Orlando metro area.
-
+https://myfwc.com/ https://datamaps.github.io/  Please note that I used the AI learning assistant and went to office hours to get my code debugged.
 
 ## **Mai Houa Hang's Resources:**
 
