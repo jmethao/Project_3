@@ -91,6 +91,12 @@ Directions for the Marker Map:
 In conclusion, if you're a resident of Florida, it's important to stay aware of your surroundings and understand the potential dangers in your area. The government has installed safety and warning signs to inform and caution tourists, with the aim of preventing future alligator-related incidents.
 
 ## **4) Average age and gender of alligator attack victims?**
+-What are the average age and gender of alligator attack victims?
+From the data set - I created and organized the data set by date, Name, Age, and Sex-Gender, and then the details of what happened. I did this to be able to read it and see it better. (This is just part of the html)
+
+For Average age and gender of alligator attack victims-I wanted to use a bar graph to show the average age and provider what the gender was for the average age. I created this by loading the fatal alligator attack  CSV file. Then clean and calculate the average age by gender.If you hover over the blue you can see the average age of male victims which is 44, if you hover over the pink you can see the average age of female victims which is 50.
+
+I created a scatter plot to show age of victims, and numbers of attacks victims -added labels and title
 
 ## **Resources We Used**
 
@@ -169,6 +175,13 @@ OpenAI. "ChatGPT." OpenAI, OpenAI, 2023, www.openai.com/chatgpt. Accessed 28 Jan
 OpenAI. "ChatGPT." OpenAI, OpenAI, 2023, www.openai.com/chatgpt. Accessed 30 Jan. 2025. Mee used ChatGPT on this day (to help with the python scatter plot graph) to extract the year from the Date column as the data did not have it's own year column. ChatGPT then helped me create a new column for Year, group the data by year, and count the number of attacks per year. 
 
 ## **Susan Thao Vang's Resources:**
+Danelo, Adam. Fatal Alligator Attacks in the U.S. Kaggle, 2021, www.kaggle.com/datasets/danela/fatal-alligator-attacks-us.
+
+OpenAI. "ChatGPT." OpenAI, OpenAI, 2023, www.openai.com/chatgpt. Accessed 27 Jan. 2025. Susan used ChatGPT to continue to find ways to code JavaScript to create a html with the data from the fatal alligator attack US CSV file. ChatGPT then helped me create a bar graph that is interactive. Creating an array to store the data and then add to map was successful. From there I was able to add markers and descriptions and add to map.
+
+OpenAI. "ChatGPT." OpenAI, OpenAI, 2023, www.openai.com/chatgpt. Accessed 28 Jan. 2025. Susan used ChatGPT to continue to find ways to code JavaScript so the average with gender per the data from the fatal alligator attack US CSV file. ChatGPT then helped me create a bar graph that is interactive. Creating an array to store the data and then add to map was successful. From there I was able to add markers and descriptions and add to map.
+
+OpenAI. "ChatGPT." OpenAI, OpenAI, 2023, www.openai.com/chatgpt. Accessed 30 Jan. 2025. Susan used ChatGPT on this day (to help with the python scatter plot graph) to extract the year from the Date column as the data did not have it's own year column. ChatGPT then helped me create a new column for Year, group the data by year, and count the number of attacks per year.
 
 
 
