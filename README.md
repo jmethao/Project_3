@@ -186,7 +186,7 @@ When working with data, it is crucial to ensure accuracy, transparency, and resp
 
 Data Source Verification: While some data sources are reliable, others lack clear origins. The dataset used from Kaggle does not specify its original source. Users should interpret it cautiously and cross-reference findings with authoritative sources.
 
-Reliable Data Sources: Other data sources in this project, such as iNaturalist.org, are considered reliable due to their government and scientific collaborations. Additionally, data from the Florida Fish and Wildlife Conservation Commission (FWC) (https://myfwc.com/wildlifehabitats/wildlife/alligator/data/) is an official and trustworthy source.
+Reliable Data Sources: Other data sources in this project, such as iNaturalist, are considered reliable due to their government and scientific collaborations. Additionally, data from the Florida Fish and Wildlife Conservation Commission (FWC) is an official and trustworthy source.
 
 Data Privacy: This project does not contain or process personally identifiable information (PII). However, any dataset updates should be reviewed to ensure privacy compliance.
 
