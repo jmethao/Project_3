@@ -1,21 +1,38 @@
 # **Alligator Population**
 
-The aim of our project is to explore alligator populations, sightings, and human-related incidents like attacks. Using interactive visualizations, we aim to highlight trends in alligator behavior and interactions with humans, helping raise awareness about alligators in the United States.
+##*Overview*##
 
-Questions we are looking to answer with our project:
+Our project explores alligator populations, sightings, and human-related incidents like attacks. Using interactive visualizations, we aim to highlight trends in alligator behavior and interactions with humans, helping raise awareness about alligators in the United States. The project provides insights into the following key questions:
 
-Are there any population distribution trends that we are seeing with alligators in Florida? 
-Has alligator sightings decreased or increased over time? 
-Is there an increase of alligator attacks over time? Where in the United States are the alligator attacks or human-related incidents occurring most frequently?
-Average age and gender of alligator attack victims?
+Are there population distribution trends for alligators in Florida?
 
-## ** How to run our data**
+Have alligator sightings increased or decreased over time?
 
-Please note that to run our data, you will have to download our github repository and use a local web server to serve the HTML file (e.g., using a tool like python -m http.server if you have Python installed, or Live Server in VS Code)
+Is there an increase in alligator attacks over time?
+
+Where in the United States are alligator attacks occurring most frequently?
+
+What are the average age and gender of alligator attack victims?
+
+## **How to Use & Interact with the Project**
+
+A local web server is required to view the visualizations. Use one of the following:
+
+- Python: python -m http.server
+
+- VS Code: Live Server extension
+
+Running the Visualizations
+
+1) Clone the repository
+
+2) Navigate to the appropriate folder and open the corresponding file
+
+3) Run using a local server python -m or use Live Server in VS Code
 
 ## **1) Are there any population distribution trends that we are seeing with alligators in Florida?**
 
-To run the bar graph for this question, go to James_code folder and select the index_james.html.html.Use a local web server such as python -m http.server if you have Python installed, or Live Server in VS Code, you can open the file.
+To run the bar graph for this question, go to James_code folder and select the index_james.html.html. Use a local web server such as python -m http.server if you have Python installed, or Live Server in VS Code.
 
 James Analysis: I expected the most amount of alligators to be harvested in counties that encompassed the Everglades. I was surprised to see that the 2 largest alligator harvests happened in counties that were around the Orlando metro area.
 
@@ -65,7 +82,6 @@ I (Mee) thought a scatter plot would do a good job highlighting the visual for t
 
 The data provided from kaggle.com shows the earliest alligator attack was from 1904. There was an incident where a male servant of Rene-Robert Cavelier was killed while swimming across the Colorado River in Texas. There were no other attacks recorded until 1973 where a woman named Sharon Holmes was killed while swimming at Oscar Scherer State Park in Florida by an 11 ft, 3 inch alligator. Between 1977 and 2022 there have been 36 other alligator attacks/incidents. 
 
-
 Directions for the Scatter Plot:
 1. do a git clone of the project 3 repository
 2. from the Alligator Plot graph and marker map folder, right click on the file and open a gitbash console in order to open jupyter notebook in your bash console
@@ -91,18 +107,44 @@ Directions for the Marker Map:
 In conclusion, if you're a resident of Florida, it's important to stay aware of your surroundings and understand the potential dangers in your area. The government has installed safety and warning signs to inform and caution tourists, with the aim of preventing future alligator-related incidents.
 
 ## **4) Average age and gender of alligator attack victims?**
--What are the average age and gender of alligator attack victims?
+
+#### How to run the data analysis in scatter_plot_age_#attacks_susan ####
+
+1) First off, you will open this file in jupyter notebook.
+2) Before running the analysis, you need to ensure that you have the necessary packages installed. You can install the required Python libraries using the following command: pip install pandas matplotlib
+3) The first step is to load the CSV file containing alligator attack data into a pandas DataFrame for analysis.
+4) Next we clean the data: Strip leading/trailing spaces from column names, convert the 'Age' column to numeric, invalid entries become NaN, and drop rows where 'Age' or 'Details' is missing
+5) Data Analysis: Count the number of attacks for each age
+6) Now you can plot the bar chart using matplotlib
+7) If you have an updated version of the dataset (e.g., with additional rows), simply replace the existing CSV file with the new one. The code will automatically work with the new data without needing any changes.
+
 From the data set - I created and organized the data set by date, Name, Age, and Sex-Gender, and then the details of what happened. I did this to be able to read it and see it better. (This is just part of the html)
 
 For Average age and gender of alligator attack victims-I wanted to use a bar graph to show the average age and provider what the gender was for the average age. I created this by loading the fatal alligator attack  CSV file. Then clean and calculate the average age by gender.If you hover over the blue you can see the average age of male victims which is 44, if you hover over the pink you can see the average age of female victims which is 50.
 
 I created a scatter plot to show age of victims, and numbers of attacks victims -added labels and title
 
+##*Ethical Considerations*##
+
+When working with data, it is crucial to ensure accuracy, transparency, and responsible use. Below are the ethical considerations for this project:
+
+Data Source Verification: While some data sources are reliable, others lack clear origins. The dataset used from Kaggle does not specify its original source. Users should interpret it cautiously and cross-reference findings with authoritative sources.
+
+Reliable Data Sources: Other data sources in this project, such as iNaturalist.org, are considered reliable due to their government and scientific collaborations. Additionally, data from the Florida Fish and Wildlife Conservation Commission (FWC) (https://myfwc.com/wildlifehabitats/wildlife/alligator/data/) is an official and trustworthy source.
+
+Data Privacy: This project does not contain or process personally identifiable information (PII). However, any dataset updates should be reviewed to ensure privacy compliance.
+
+Responsible Interpretation: The findings should not be used to spread misinformation or create unnecessary fear regarding alligator populations. Instead, the goal is to provide educational and research value.
+
 ## **Resources We Used**
 
 ## **James Elander's Resources: 
 
-https://myfwc.com/ https://datamaps.github.io/  Please note that I used the AI learning assistant and went to office hours to get my code debugged.
+Florida Fish and Wildlife Conservation Commission (FWC). Accessed Feburary 2025. I, James Elander, used this website to obtain alligator population and harvest data for the project. The data was retrieved from the Florida Fish and Wildlife Conservation Commission website. Retrieved from https://myfwc.com/
+
+DataMaps. Accessed February 2025. I, James Elander, used this website as a resource for interactive map visualizations in the project. DataMaps provides an open-source library for creating responsive and dynamic maps using JavaScript. Retrieved from https://datamaps.github.io/
+
+Please note that I used the AI learning assistant and went to office hours to get my code debugged.
 
 ## **Mai Houa Hang's Resources:**
 
