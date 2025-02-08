@@ -1,6 +1,6 @@
 # **Alligator Population**
 
-##*Overview*##
+## *Overview* ##
 
 Our project explores alligator populations, sightings, and human-related incidents like attacks. Using interactive visualizations, we aim to highlight trends in alligator behavior and interactions with humans, helping raise awareness about alligators in the United States. The project provides insights into the following key questions:
 
@@ -180,7 +180,7 @@ Conclusion:
 
 Younger males may be more involved in outdoor activities near water, which increases their risk of encountering alligators. Educating young males about safety when engaging in water-related activities could help reduce the number of attacks in this age group. The older age of female victims suggests they may face greater vulnerability as they age, potentially due to physical decline or other health related issues. This might warrant targeted awareness campaigns or precautions for older women in areas where alligators are prevalent.
 
-##*Ethical Considerations*##
+## *Ethical Considerations* ##
 
 When working with data, it is crucial to ensure accuracy, transparency, and responsible use. Below are the ethical considerations for this project:
 
